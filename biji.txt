@@ -1,0 +1,11 @@
+1.导入常用依赖 :
+   springboot + lombok + mysql +
+
+2.配置文件连接数据库
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/db2023_mybatis_plus?serverTimezone=GMT%2B8&characterEncoding=utf-8
+spring.datasource.username=root
+spring.datasource.password=123456
+
+
+3.

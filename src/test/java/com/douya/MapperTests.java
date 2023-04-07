@@ -70,7 +70,7 @@ public class MapperTests {
 
     @Test
     void delete() {
-        int i = userMapper.deleteById(1642910069565296642L);
+        int i = userMapper.deleteById(1643094687270764551L);
         System.out.println("i = " + i);
     }
 

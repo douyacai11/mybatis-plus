@@ -3,8 +3,20 @@
 
 <mapper namespace="com.douya.mapper.UserMapper">
 
+    <sql id="Base_Column_List">
+        id,name,age,email
+    </sql>
 
     <select id="selectAllByName" resultType="com.douya.entity.User">
-        select * from t_user where name=#{name}
+        select <include refid="Base_Column_List"/>
+        from t_user
+        where name=#{name}
+    </select>
+
+<!-- 条件查询-->
+    <select id="selectPageByAge" resultType="com.douya.entity.User">
+        select <include refid="Base_Column_List"/>
+        from t_user
+        where age>#{age}
     </select>
 </mapper>

@@ -2,6 +2,7 @@ package com.douya;
 
 import com.douya.entity.User;
 import com.douya.service.UserService;
+import com.douya.service.impl.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -10,8 +11,10 @@ import java.util.ArrayList;
 
 @SpringBootTest
 public class ServiceTests {
+
+
     @Resource
-    private UserService userService;
+    private UserService userService ;
 
 
     @Test

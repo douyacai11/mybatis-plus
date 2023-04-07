@@ -1,8 +1,6 @@
 package com.douya.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -21,6 +19,11 @@ public class User {
 
     private LocalDateTime createTime;
     private LocalDateTime updateTime;
+
+
+    @TableLogic
+    @TableField(value = "is_deleted")
+    private boolean deleted;
 
 
 }
